@@ -10,6 +10,12 @@ resolution-markers = [
     "python_full_version < '3.14' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 
+[manifest]
+members = [
+    "llm-zoomcamp-hw4",
+    "rag-zoomcamp",
+]
+
 [[package]]
 name = "annotated-types"
 version = "0.7.0"
@@ -999,6 +1005,25 @@ wheels = [
 ]
 
 [[package]]
+name = "llm-zoomcamp-hw4"
+version = "0.1.0"
+source = { virtual = "llm-zoomcamp-hw4" }
+dependencies = [
+    { name = "openai" },
+    { name = "pandas" },
+    { name = "pydantic" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "openai", specifier = ">=2.43.0" },
+    { name = "pandas", specifier = ">=3.0.3" },
+    { name = "pydantic", specifier = ">=2.13.4" },
+    { name = "python-dotenv", specifier = ">=1.2.2" },
+]
+
+[[package]]
 name = "markupsafe"
 version = "3.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1710,9 +1735,11 @@ dependencies = [
     { name = "groq" },
     { name = "jupyter" },
     { name = "minsearch" },
+    { name = "pandas" },
     { name = "python-dotenv" },
     { name = "requests" },
     { name = "toyaikit" },
+    { name = "tqdm" },
 ]
 
 [package.metadata]
@@ -1721,9 +1748,11 @@ requires-dist = [
     { name = "groq", specifier = ">=1.4.0" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "minsearch", specifier = ">=0.1.0" },
+    { name = "pandas", specifier = ">=3.0.3" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "requests", specifier = ">=2.34.2" },
     { name = "toyaikit", specifier = ">=0.0.11" },
+    { name = "tqdm", specifier = ">=4.68.3" },
 ]
 
 [[package]]

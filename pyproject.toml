@@ -9,7 +9,14 @@ dependencies = [
     "groq>=1.4.0",
     "jupyter>=1.1.1",
     "minsearch>=0.1.0",
+    "pandas>=3.0.3",
     "python-dotenv>=1.2.2",
     "requests>=2.34.2",
     "toyaikit>=0.0.11",
+    "tqdm>=4.68.3",
+]
+
+[tool.uv.workspace]
+members = [
+    "llm-zoomcamp-hw4",
 ]
